@@ -16,6 +16,7 @@ using System.Net;
 using System.Data;
 using System.Net.Http;
 using Newtonsoft.Json;
+using WebSocketSharp;
 
 namespace WebClient
 {
@@ -23,31 +24,31 @@ namespace WebClient
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
 
-    class Routes
-    {
-        public int id { get; set; }
-        public string name { get; set; }
-        public double longitude { get; set; }
-        public double latitude { get; set; }
-        public double rate { get; set; }
-    }
-
     public partial class MainWindow : Window
     {
-        public string uri = @"https://intense-shelf-88498.herokuapp.com/jsdb/";
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void subItem1_Click(object sender, RoutedEventArgs e)
         {
-            var client = new HttpClient();
-            byte[] request = await client.GetByteArrayAsync(new Uri(uri));
-            Portable.Text.Encoding encoding = Portable.Text.Encoding.GetEncoding(1251);
-            var s = encoding.GetString(request, 0, request.Length);
-            var routes = JsonConvert.DeserializeObject<Routes[]>(s);
-            dataGrid1.ItemsSource = routes;
+            frame.Source = "Page1.xaml".ToUri();
+        }
+
+        private void subItem2_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "Page2.xaml".ToUri();
+        }
+
+        private void subItem3_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "Page3.xaml".ToUri();
+        }
+
+        private void subItem4_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "Page4.xaml".ToUri();
         }
     }
 }
