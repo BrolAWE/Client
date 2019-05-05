@@ -28,7 +28,7 @@ namespace WebClient
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string uri = @"https://intense-shelf-88498.herokuapp.com/edit?id=" + Id.Text+"&name=" + Name.Text + "&longitude=" + Longitude.Text + "&latitude=" + Latitude.Text + "&rate= " + Rate.Text + "&photo=" + Photo.Text;
+            string uri = @"https://alexeyd.herokuapp.com/edit?id=" + Id.Text+"&name=" + Name.Text + "&longitude=" + Longitude.Text + "&latitude=" + Latitude.Text + "&rate= " + Rate.Text + "&photo=" + Photo.Text;
             var client = new HttpClient();
             byte[] request = await client.GetByteArrayAsync(new Uri(uri));
         }

@@ -82,35 +82,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Page1.xaml">
+    <Page Include="View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page2.xaml">
+    <Page Include="Delete.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page3.xaml">
+    <Page Include="Add.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page4.xaml">
+    <Page Include="Edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="View.xaml.cs">
+      <DependentUpon>View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page2.xaml.cs">
-      <DependentUpon>Page2.xaml</DependentUpon>
+    <Compile Include="Delete.xaml.cs">
+      <DependentUpon>Delete.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page3.xaml.cs">
-      <DependentUpon>Page3.xaml</DependentUpon>
+    <Compile Include="Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page4.xaml.cs">
-      <DependentUpon>Page4.xaml</DependentUpon>
+    <Compile Include="Edit.xaml.cs">
+      <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

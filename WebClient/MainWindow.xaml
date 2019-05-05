@@ -13,6 +13,6 @@
             <MenuItem Header="Add" x:Name="subItem3" Click="subItem3_Click"></MenuItem>
             <MenuItem Header="Edit" x:Name="subItem4" Click="subItem4_Click"></MenuItem>
         </Menu>
-        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="377" Margin="10,35,0,0" VerticalAlignment="Top" Width="733" Source="Page1.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="377" Margin="10,35,0,0" VerticalAlignment="Top" Width="733" Source="View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
     </Grid>
 </Window>

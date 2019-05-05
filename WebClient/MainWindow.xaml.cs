@@ -33,22 +33,22 @@ namespace WebClient
 
         private void subItem1_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Page1.xaml".ToUri();
+            frame.Source = "View.xaml".ToUri();
         }
 
         private void subItem2_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Page2.xaml".ToUri();
+            frame.Source = "Delete.xaml".ToUri();
         }
 
         private void subItem3_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Page3.xaml".ToUri();
+            frame.Source = "Add.xaml".ToUri();
         }
 
         private void subItem4_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Page4.xaml".ToUri();
+            frame.Source = "Edit.xaml".ToUri();
         }
     }
 }

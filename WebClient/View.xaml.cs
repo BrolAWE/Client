@@ -154,11 +154,15 @@ namespace WebClient
                     second = "photo";
                 }
             }
-            if (Lower.IsChecked == true&&first!="")
+            if (LowerFirst.IsChecked == true&&first!="")
             {
                 first = "-"+first;
             }
-            string uri = @"https://intense-shelf-88498.herokuapp.com/jsdb?first=" + first + "&second=" + second;
+            if (LowerSecond.IsChecked == true && second != "")
+            {
+                second = "-" + second;
+            }
+            string uri = @"https://alexeyd.herokuapp.com/jsdb?first=" + first + "&second=" + second;
             var client = new HttpClient();
             byte[] request = await client.GetByteArrayAsync(new Uri(uri));
             Portable.Text.Encoding encoding = Portable.Text.Encoding.GetEncoding(1251);

@@ -28,7 +28,7 @@ namespace WebClient
         }
         private async void Delete_Click(object sender, RoutedEventArgs e)
         {
-            string uri = @"https://intense-shelf-88498.herokuapp.com/delete?id="+Id.Text;
+            string uri = @"https://alexeyd.herokuapp.com/delete?id=" + Id.Text;
             var client = new HttpClient();
             byte[] request = await client.GetByteArrayAsync(new Uri(uri));
         }
