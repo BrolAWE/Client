@@ -9,8 +9,8 @@
       Title="Page2">
 
     <Grid>
-        <Label Content="Id" HorizontalAlignment="Left" Margin="174,128,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="195,127,0,0" TextWrapping="Wrap" Name="Id" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="195,150,0,0" VerticalAlignment="Top" Width="120" Click="Delete_Click"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="4,3,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="25,2,0,0" TextWrapping="Wrap" Name="Id" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="120" Click="Delete_Click"/>
     </Grid>
 </Page>

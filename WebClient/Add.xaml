@@ -9,16 +9,16 @@
       Title="Page3">
 
     <Grid>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="213,93,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,96,0,0" TextWrapping="Wrap" x:Name="Name" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="255,208,0,0" VerticalAlignment="Top" Width="120" Click="Add_Click"/>
-        <Label Content="Longitude" HorizontalAlignment="Left" Margin="191,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.078,0.617"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,116,0,0" TextWrapping="Wrap" x:Name="Longitude" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Latitude" HorizontalAlignment="Left" Margin="202,137,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,139,0,0" TextWrapping="Wrap" x:Name="Latitude" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Rate" HorizontalAlignment="Left" Margin="221,159,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,162,0,0" TextWrapping="Wrap" x:Name="Rate" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Photo" HorizontalAlignment="Left" Margin="213,182,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,185,0,0" TextWrapping="Wrap" x:Name="Photo" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="23,3,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="65,6,0,0" TextWrapping="Wrap" x:Name="Name" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="65,118,0,0" VerticalAlignment="Top" Width="120" Click="Add_Click"/>
+        <Label Content="Longitude" HorizontalAlignment="Left" Margin="1,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.078,0.617"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="65,26,0,0" TextWrapping="Wrap" x:Name="Longitude" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Latitude" HorizontalAlignment="Left" Margin="12,47,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="65,49,0,0" TextWrapping="Wrap" x:Name="Latitude" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Rate" HorizontalAlignment="Left" Margin="31,69,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="65,72,0,0" TextWrapping="Wrap" x:Name="Rate" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Photo" HorizontalAlignment="Left" Margin="23,92,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="65,95,0,0" TextWrapping="Wrap" x:Name="Photo" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Page>

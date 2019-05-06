@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Information System" Height="450" Width="763.2">
     <Grid Margin="0,0,3.6,-2">
-        <Menu HorizontalAlignment="Left" Height="30" Margin="10,0,0,0" VerticalAlignment="Top" Width="733">
+        <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="753">
             <MenuItem Header="View" x:Name="subItem1" Click="subItem1_Click"></MenuItem>
             <MenuItem Header="Delete" x:Name="subItem2" Click="subItem2_Click"></MenuItem>
             <MenuItem Header="Add" x:Name="subItem3" Click="subItem3_Click"></MenuItem>
             <MenuItem Header="Edit" x:Name="subItem4" Click="subItem4_Click"></MenuItem>
         </Menu>
-        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="377" Margin="10,35,0,0" VerticalAlignment="Top" Width="733" Source="View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="402" Margin="0,20,0,0" VerticalAlignment="Top" Width="753" Source="View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
     </Grid>
 </Window>
