@@ -38,7 +38,7 @@ namespace WebClient
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string first="",second="",how="";
+            string first="",second="",how="", firstsearch = "", howfirstsearch = "", secondsearch = "", howsecondsearch = "";
             if (FirstName.IsChecked == true) {
                 first = "name";
                 if (SecondName.IsChecked == true)
@@ -154,6 +154,7 @@ namespace WebClient
                     second = "photo";
                 }
             }
+
             if (LowerFirst.IsChecked == true&&first!="")
             {
                 first = "-"+first;
@@ -162,7 +163,60 @@ namespace WebClient
             {
                 second = "-" + second;
             }
-            string uri = @"https://alexeyd.herokuapp.com/jsdb?first=" + first + "&second=" + second;
+
+            if (FirstSearchName.IsChecked == true)
+            {
+                howfirstsearch = "name";
+                firstsearch = FirstSearchBox.Text;
+            }
+            if (FirstSearchLatitude.IsChecked == true)
+            {
+                howfirstsearch = "latitude";
+                firstsearch = FirstSearchBox.Text;
+            }
+            if (FirstSearchLongitude.IsChecked == true)
+            {
+                howfirstsearch = "longitude";
+                firstsearch = FirstSearchBox.Text;
+            }
+            if (FirstSearchRate.IsChecked == true)
+            {
+                howfirstsearch = "rate";
+                firstsearch = FirstSearchBox.Text;
+            }
+            if (FirstSearchPhoto.IsChecked == true)
+            {
+                howfirstsearch = "photo";
+                firstsearch = FirstSearchBox.Text;
+            }
+
+            if (SecondSearchName.IsChecked == true && howfirstsearch != "")
+            {
+                howsecondsearch = "name";
+                secondsearch = SecondSearchBox.Text;
+            }
+            if (SecondSearchLatitude.IsChecked == true && howfirstsearch != "")
+            {
+                howsecondsearch = "latitude";
+                secondsearch = SecondSearchBox.Text;
+            }
+            if (SecondSearchLongitude.IsChecked == true && howfirstsearch != "")
+            {
+                howsecondsearch = "longitude";
+                secondsearch = SecondSearchBox.Text;
+            }
+            if (SecondSearchRate.IsChecked == true && howfirstsearch != "")
+            {
+                howsecondsearch = "rate";
+                secondsearch = SecondSearchBox.Text;
+            }
+            if (SecondSearchPhoto.IsChecked == true && howfirstsearch != "")
+            {
+                howsecondsearch = "photo";
+                secondsearch = SecondSearchBox.Text;
+            }
+
+            string uri = @"https://alexeyd.herokuapp.com/jsdb?first=" + first + "&second=" + second + "&firstsearch=" + firstsearch + "&howfirstsearch=" + howfirstsearch + "&secondsearch=" + secondsearch + "&howsecondsearch=" + howsecondsearch;
             var client = new HttpClient();
             byte[] request = await client.GetByteArrayAsync(new Uri(uri));
             Portable.Text.Encoding encoding = Portable.Text.Encoding.GetEncoding(1251);

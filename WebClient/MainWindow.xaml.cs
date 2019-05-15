@@ -48,7 +48,7 @@ namespace WebClient
 
         private void subItem4_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Edit.xaml".ToUri();
+            frame.Source = "EditPass.xaml".ToUri();
         }
     }
 }

@@ -16,7 +16,7 @@
             <DataGrid.Columns>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="View" HorizontalAlignment="Left" Margin="565,195,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="570,338,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <StackPanel x:Name="stackPanel" HorizontalAlignment="Left" Margin="502,1,0,0" VerticalAlignment="Top" Width="120">
             <Label Content="First"/>
             <RadioButton GroupName="First" Content="None" IsChecked="True"/>
@@ -44,6 +44,26 @@
             <Label Content="HowSecond"/>
             <RadioButton x:Name="UpperSecond" GroupName="HowSecond" Content="Upper" IsChecked="True"/>
             <RadioButton x:Name="LowerSecond" GroupName="HowSecond" Content="Lower" />
+        </StackPanel>
+        <StackPanel x:Name="stackPanel_Copy3" HorizontalAlignment="Left" Margin="485,188,0,0" VerticalAlignment="Top" Width="120">
+            <Label Content="FirstSearch"/>
+            <RadioButton GroupName="FirstSearch" Content="None" IsChecked="True"/>
+            <RadioButton x:Name="FirstSearchName" GroupName="FirstSearch" Content="Name" />
+            <RadioButton x:Name="FirstSearchLongitude" GroupName="FirstSearch" Content="Longitude" />
+            <RadioButton x:Name="FirstSearchLatitude" GroupName="FirstSearch" Content="Latitude" />
+            <RadioButton x:Name="FirstSearchRate" GroupName="FirstSearch" Content="Rate" />
+            <RadioButton x:Name="FirstSearchPhoto" GroupName="FirstSearch" Content="Photo" />
+            <TextBox x:Name="FirstSearchBox" HorizontalAlignment="Left" Width="120"/>
+        </StackPanel>
+        <StackPanel x:Name="stackPanel_Copy4" HorizontalAlignment="Left" Margin="610,188,0,0" VerticalAlignment="Top" Width="120">
+            <Label Content="SecondSearch"/>
+            <RadioButton GroupName="SecondSearch" Content="None" IsChecked="True"/>
+            <RadioButton x:Name="SecondSearchName" GroupName="SecondSearch" Content="Name" />
+            <RadioButton x:Name="SecondSearchLongitude" GroupName="SecondSearch" Content="Longitude" />
+            <RadioButton x:Name="SecondSearchLatitude" GroupName="SecondSearch" Content="Latitude" />
+            <RadioButton x:Name="SecondSearchRate" GroupName="SecondSearch" Content="Rate" />
+            <RadioButton x:Name="SecondSearchPhoto" GroupName="SecondSearch" Content="Photo" />
+            <TextBox x:Name="SecondSearchBox" HorizontalAlignment="Left" Width="120"/>
         </StackPanel>
     </Grid>
 </Page>
