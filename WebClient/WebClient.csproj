@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FTTM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,10 +89,17 @@
     <Compile Include="EditPass.xaml.cs">
       <DependentUpon>EditPass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FTTM.xaml.cs">
+      <DependentUpon>FTTM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MNK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +118,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MNK.xaml.cs">
+      <DependentUpon>MNK.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>
     </Compile>

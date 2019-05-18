@@ -12,6 +12,7 @@
             <MenuItem Header="Delete" x:Name="subItem2" Click="subItem2_Click"></MenuItem>
             <MenuItem Header="Add" x:Name="subItem3" Click="subItem3_Click"></MenuItem>
             <MenuItem Header="Edit" x:Name="subItem4" Click="subItem4_Click"></MenuItem>
+            <MenuItem Header="MNK" x:Name="subItem5" Click="subItem5_Click"></MenuItem>
         </Menu>
         <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="402" Margin="0,20,0,0" VerticalAlignment="Top" Width="753" Source="View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
     </Grid>

@@ -50,5 +50,10 @@ namespace WebClient
         {
             frame.Source = "EditPass.xaml".ToUri();
         }
+
+        private void subItem5_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MNK.xaml".ToUri();
+        }
     }
 }
