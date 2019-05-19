@@ -11,7 +11,7 @@
     <Grid>
         <Label Content="Id" HorizontalAlignment="Left" Margin="-1,0,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="20,0,0,0" TextWrapping="Wrap" x:Name="Id" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Height="26" Margin="20,23,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Height="26" Margin="20,23,0,0" VerticalAlignment="Top" Width="120" Click="Edit_Click"/>
 
     </Grid>
 </Page>

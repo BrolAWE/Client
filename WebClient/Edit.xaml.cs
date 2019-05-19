@@ -17,16 +17,16 @@ using System.Windows.Shapes;
 namespace WebClient
 {
     /// <summary>
-    /// Логика взаимодействия для Page4.xaml
+    /// Логика взаимодействия для Edit.xaml
     /// </summary>
-    public partial class Page4 : Page
+    public partial class Edit : Page
     {
-        public Page4()
+        public Edit()
         {
             InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Edit_Click(object sender, RoutedEventArgs e)
         {
             string uri = @"https://alexeyd.herokuapp.com/edit?id=" + Id.Text+"&name=" + Name.Text + "&longitude=" + Longitude.Text + "&latitude=" + Latitude.Text + "&rate= " + Rate.Text + "&photo=" + Photo.Text;
             var client = new HttpClient();

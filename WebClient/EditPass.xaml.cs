@@ -27,7 +27,7 @@ namespace WebClient
             InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Edit_Click(object sender, RoutedEventArgs e)
         {
             var mw = Application.Current.Windows
             .Cast<Window>()
