@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace WebClient
 {
     /// <summary>
-    /// Логика взаимодействия для Page3.xaml
+    /// Логика взаимодействия для Add.xaml
     /// </summary>
-    public partial class Page3 : Page
+    public partial class Add : Page
     {
-        public Page3()
+        public Add()
         {
             InitializeComponent();
         }

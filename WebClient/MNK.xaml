@@ -9,13 +9,13 @@
       Title="MNK">
 
     <Grid>
-        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="480" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False">
+        <DataGrid x:Name="View" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="140" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="X"/>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Y"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="610,9,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="MNK_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="485,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="65,361,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="MNK_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
     </Grid>
 </Page>

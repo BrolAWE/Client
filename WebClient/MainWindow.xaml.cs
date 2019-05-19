@@ -31,29 +31,34 @@ namespace WebClient
             InitializeComponent();
         }
 
-        private void subItem1_Click(object sender, RoutedEventArgs e)
+        private void View_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "View.xaml".ToUri();
         }
 
-        private void subItem2_Click(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "Delete.xaml".ToUri();
         }
 
-        private void subItem3_Click(object sender, RoutedEventArgs e)
+        private void Add_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "Add.xaml".ToUri();
         }
 
-        private void subItem4_Click(object sender, RoutedEventArgs e)
+        private void Edit_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "EditPass.xaml".ToUri();
         }
 
-        private void subItem5_Click(object sender, RoutedEventArgs e)
+        private void MNK_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "MNK.xaml".ToUri();
+        }
+
+        private void FTTM_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "FTTM.xaml".ToUri();
         }
     }
 }

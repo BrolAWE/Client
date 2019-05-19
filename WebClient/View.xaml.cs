@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace WebClient
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для View.xaml
     /// </summary>
     class Routes
     {
@@ -29,16 +29,16 @@ namespace WebClient
         public double rate { get; set; }
         public string photo { get; set; }
     }
-    public partial class Page1 : Page
+    public partial class View : Page
     {
 
-        public Page1()
+        public View()
         {
             InitializeComponent();
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string first="",second="",how="", firstsearch = "", howfirstsearch = "", secondsearch = "", howsecondsearch = "";
+            string first="",second="", firstsearch = "", howfirstsearch = "", secondsearch = "", howsecondsearch = "";
             if (FirstName.IsChecked == true) {
                 first = "name";
                 if (SecondName.IsChecked == true)
@@ -222,7 +222,7 @@ namespace WebClient
             Portable.Text.Encoding encoding = Portable.Text.Encoding.GetEncoding(1251);
             var s = encoding.GetString(request, 0, request.Length);
             var routes = JsonConvert.DeserializeObject<Routes[]>(s);
-            dataGrid1.ItemsSource = routes;
+            DGView.ItemsSource = routes;
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)

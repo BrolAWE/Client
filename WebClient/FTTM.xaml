@@ -5,10 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WebClient"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="394.8" d:DesignWidth="575"
       Title="FTTM">
 
     <Grid>
-        
+        <DataGrid x:Name="P" HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="165" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False" Margin="10,10,0,0"/>
+        <Button Content="View P" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Add P" HorizontalAlignment="Left" Margin="100,368,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="100,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <DataGrid x:Name="Q" HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="165" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False" Margin="195,10,0,0"/>
+        <Button Content="View Q" HorizontalAlignment="Left" Margin="195,368,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Add Q" HorizontalAlignment="Left" Margin="285,368,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="195,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="285,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <DataGrid x:Name="Join" HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="165" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False" Margin="380,10,0,0"/>
     </Grid>
 </Page>
