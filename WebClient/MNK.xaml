@@ -16,6 +16,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="View" HorizontalAlignment="Left" Margin="65,361,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="MNK_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="0,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="5,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
     </Grid>
 </Page>

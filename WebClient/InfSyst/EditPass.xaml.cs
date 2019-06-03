@@ -39,7 +39,7 @@ namespace WebClient
             var s = encoding.GetString(request, 0, request.Length);
             if (s == "OK")
             {
-                mw.frame.Source = "Edit.xaml".ToUri();
+                mw.frame.Source = "InfSyst/Edit.xaml".ToUri();
             }
         }
     }

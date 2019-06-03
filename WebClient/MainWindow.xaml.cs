@@ -33,22 +33,22 @@ namespace WebClient
 
         private void View_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "View.xaml".ToUri();
+            frame.Source = "InfSyst/View.xaml".ToUri();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Delete.xaml".ToUri();
+            frame.Source = "InfSyst/Delete.xaml".ToUri();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "Add.xaml".ToUri();
+            frame.Source = "InfSyst/Add.xaml".ToUri();
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            frame.Source = "EditPass.xaml".ToUri();
+            frame.Source = "InfSyst/EditPass.xaml".ToUri();
         }
 
         private void MNK_Click(object sender, RoutedEventArgs e)
@@ -59,6 +59,16 @@ namespace WebClient
         private void FTTM_Click(object sender, RoutedEventArgs e)
         {
             frame.Source = "FTTM.xaml".ToUri();
+        }
+
+        private void Lexema_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "Lexema.xaml".ToUri();
+        }
+
+        private void Arithmetic_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "Arithmetic/Arithmetic.xaml".ToUri();
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebClient"
         mc:Ignorable="d"
-        Title="Information System" Height="450" Width="763.2">
+        Title="Information System" Height="736.35" Width="763.2">
     <Grid Margin="0,0,3.6,-2">
         <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="753">
             <MenuItem Header="View" x:Name="View" Click="View_Click"></MenuItem>
@@ -14,7 +14,9 @@
             <MenuItem Header="Edit" x:Name="Edit" Click="Edit_Click"></MenuItem>
             <MenuItem Header="MNK" x:Name="MNK" Click="MNK_Click"></MenuItem>
             <MenuItem Header="FTTM" x:Name="FTTM" Click="FTTM_Click"></MenuItem>
+            <MenuItem Header="Lexema" x:Name="Lexema" Click="Lexema_Click"></MenuItem>
+            <MenuItem Header="Arithmetic" x:Name="Arithmetic" Click="Arithmetic_Click"></MenuItem>
         </Menu>
-        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="402" Margin="0,20,0,0" VerticalAlignment="Top" Width="753" Source="View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="688" Margin="0,20,0,0" VerticalAlignment="Top" Width="753" Source="InfSyst/View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
     </Grid>
 </Window>

@@ -4,13 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WebClient"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="View" Width="753" Height="402">
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="View" Width="753" Height="645">
 
-    <Grid Margin="1,0,-1,-0.4" Width="753" Height="402">
-        <DataGrid x:Name="DGView" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="480" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False"/>
-        <Button Content="View" HorizontalAlignment="Left" Margin="540,327,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    <Grid Margin="1,0,-1.2,-0.2" Width="753">
+        <DataGrid x:Name="DGView" HorizontalAlignment="Left" Height="645" VerticalAlignment="Top" Width="480" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserReorderColumns="False"/>
+        <Button x:Name="BK" Content="View" HorizontalAlignment="Left" Margin="485,453,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <StackPanel x:Name="FirstSort" HorizontalAlignment="Left" Margin="482,1,0,0" VerticalAlignment="Top" Width="120">
             <Label Content="First"/>
             <RadioButton GroupName="First" Content="None" IsChecked="True"/>
@@ -47,7 +46,7 @@
             <RadioButton x:Name="FirstSearchLatitude" GroupName="FirstSearch" Content="Latitude" Margin="0,0,30,0" />
             <RadioButton x:Name="FirstSearchRate" GroupName="FirstSearch" Content="Rate" Margin="0,0,30,0" />
             <RadioButton x:Name="FirstSearchPhoto" GroupName="FirstSearch" Content="Photo" Margin="0,0,30,0" />
-            <TextBox x:Name="FirstSearchBox" Margin="0,0,29.6,0"/>
+            <TextBox x:Name="FirstSearchBox" Margin="0,0,29.6,0" PreviewTextInput="FirstSearchBox_PreviewTextInput" PreviewKeyDown="FirstSearchBox_PreviewKeyDown" PreviewKeyUp="FirstSearchBox_PreviewKeyUp"/>
         </StackPanel>
         <StackPanel x:Name="SecondSearch" HorizontalAlignment="Left" Margin="585,188,0,0" VerticalAlignment="Top" Width="120">
             <Label Content="SecondSearch"/>
@@ -58,6 +57,15 @@
             <RadioButton x:Name="SecondSearchRate" GroupName="SecondSearch" Content="Rate" />
             <RadioButton x:Name="SecondSearchPhoto" GroupName="SecondSearch" Content="Photo" />
             <TextBox x:Name="SecondSearchBox" HorizontalAlignment="Left" Width="75"/>
+        </StackPanel>
+        <StackPanel x:Name="Interval" HorizontalAlignment="Left" Margin="485,326,0,0" VerticalAlignment="Top" Width="120">
+            <Label Content="Interval"/>
+            <RadioButton GroupName="Interval" Content="None" IsChecked="True"/>
+            <RadioButton x:Name="IntervalRate" GroupName="Interval" Content="Rate" />
+            <RadioButton x:Name="IntervalLongitude" GroupName="Interval" Content="Longitude" />
+            <RadioButton x:Name="IntervalLatitude" GroupName="Interval" Content="Latitude" />
+            <TextBox x:Name="Down" HorizontalAlignment="Left" Width="48" Text="Down"/>
+            <TextBox x:Name="Up" HorizontalAlignment="Left" Width="48" Text="Up"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -28,17 +29,19 @@ namespace WebClient
         public double latitude { get; set; }
         public double rate { get; set; }
         public string photo { get; set; }
+        public string url { get; set; }
     }
     public partial class View : Page
     {
-
+        HttpClient client;
         public View()
         {
             InitializeComponent();
+            client = new HttpClient();
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string first="",second="", firstsearch = "", howfirstsearch = "", secondsearch = "", howsecondsearch = "";
+            string first="",second="", firstsearch = "", howfirstsearch = "", secondsearch = "", howsecondsearch = "", interval="", down="", up="";
             if (FirstName.IsChecked == true) {
                 first = "name";
                 if (SecondName.IsChecked == true)
@@ -215,9 +218,26 @@ namespace WebClient
                 howsecondsearch = "photo";
                 secondsearch = SecondSearchBox.Text;
             }
+            if (IntervalRate.IsChecked == true)
+            {
+                interval = "rate";
+                down = Down.Text;
+                up = Up.Text;
+            }
+            if (IntervalLongitude.IsChecked == true)
+            {
+                interval = "longitude";
+                down = Down.Text;
+                up = Up.Text;
+            }
+            if (IntervalLatitude.IsChecked == true)
+            {
+                interval = "latitude";
+                down = Down.Text;
+                up = Up.Text;
+            }
 
-            string uri = @"https://alexeyd.herokuapp.com/jsdb?first=" + first + "&second=" + second + "&firstsearch=" + firstsearch + "&howfirstsearch=" + howfirstsearch + "&secondsearch=" + secondsearch + "&howsecondsearch=" + howsecondsearch;
-            var client = new HttpClient();
+            string uri = @"https://alexeyd.herokuapp.com/jsdb?first=" + first + "&second=" + second + "&firstsearch=" + firstsearch + "&howfirstsearch=" + howfirstsearch + "&secondsearch=" + secondsearch + "&howsecondsearch=" + howsecondsearch + "&interval=" + interval + "&down=" + down + "&up=" + up;
             byte[] request = await client.GetByteArrayAsync(new Uri(uri));
             Portable.Text.Encoding encoding = Portable.Text.Encoding.GetEncoding(1251);
             var s = encoding.GetString(request, 0, request.Length);
@@ -228,6 +248,19 @@ namespace WebClient
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void FirstSearchBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+        }
+
+        private void FirstSearchBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void FirstSearchBox_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            BK.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
         }
     }
 }

@@ -70,11 +70,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="EditPass.xaml">
+    <Page Include="Arithmetic\Arithmetic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfSyst\EditPass.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FTTM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lexema.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,11 +94,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EditPass.xaml.cs">
+    <Compile Include="Arithmetic\Arithmetic.xaml.cs">
+      <DependentUpon>Arithmetic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Arithmetic\ArithmeticC.cs" />
+    <Compile Include="InfSyst\EditPass.xaml.cs">
       <DependentUpon>EditPass.xaml</DependentUpon>
     </Compile>
     <Compile Include="FTTM.xaml.cs">
       <DependentUpon>FTTM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lexema.xaml.cs">
+      <DependentUpon>Lexema.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -100,19 +115,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View.xaml">
+    <Page Include="InfSyst\View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Delete.xaml">
+    <Page Include="InfSyst\Delete.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Add.xaml">
+    <Page Include="InfSyst\Add.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Edit.xaml">
+    <Page Include="InfSyst\Edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,16 +136,16 @@
     <Compile Include="MNK.xaml.cs">
       <DependentUpon>MNK.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View.xaml.cs">
+    <Compile Include="InfSyst\View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Delete.xaml.cs">
+    <Compile Include="InfSyst\Delete.xaml.cs">
       <DependentUpon>Delete.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Add.xaml.cs">
+    <Compile Include="InfSyst\Add.xaml.cs">
       <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Edit.xaml.cs">
+    <Compile Include="InfSyst\Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
