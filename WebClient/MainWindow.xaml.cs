@@ -70,5 +70,55 @@ namespace WebClient
         {
             frame.Source = "Arithmetic/Arithmetic.xaml".ToUri();
         }
+
+        private void Usl1_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Usl1.xaml".ToUri();
+        }
+
+        private void Res1_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Res1.xaml".ToUri();
+        }
+
+        private void Usl2_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Usl2.xaml".ToUri();
+        }
+
+        private void Res2_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Res2.xaml".ToUri();
+        }
+
+        private void Usl3_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Usl3.xaml".ToUri();
+        }
+
+        private void Res3_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Res3.xaml".ToUri();
+        }
+
+        private void Usl4_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Usl4.xaml".ToUri();
+        }
+
+        private void Res4_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Res4.xaml".ToUri();
+        }
+
+        private void Usl5_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Usl5.xaml".ToUri();
+        }
+
+        private void Res5_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = "MPRO/Res5.xaml".ToUri();
+        }
     }
 }

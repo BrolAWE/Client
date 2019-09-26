@@ -16,6 +16,26 @@
             <MenuItem Header="FTTM" x:Name="FTTM" Click="FTTM_Click"></MenuItem>
             <MenuItem Header="Lexema" x:Name="Lexema" Click="Lexema_Click"></MenuItem>
             <MenuItem Header="Arithmetic" x:Name="Arithmetic" Click="Arithmetic_Click"></MenuItem>
+            <MenuItem Header="Задача 1" x:Name="Zad1">
+                <MenuItem Header="Условие задачи" Click="Usl1_Click" ></MenuItem>
+                <MenuItem Header="Решение" Click="Res1_Click" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Задача 2" x:Name="Zad2">
+                <MenuItem Header="Условие задачи" Click="Usl2_Click" ></MenuItem>
+                <MenuItem Header="Решение" Click="Res2_Click" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Задача 3" x:Name="Zad3">
+                <MenuItem Header="Условие задачи" Click="Usl3_Click" ></MenuItem>
+                <MenuItem Header="Решение" Click="Res3_Click" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Задача 4" x:Name="Zad4">
+                <MenuItem Header="Условие задачи" Click="Usl4_Click" ></MenuItem>
+                <MenuItem Header="Решение" Click="Res4_Click" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Задача 5" x:Name="Zad5">
+                <MenuItem Header="Условие задачи" Click="Usl5_Click" ></MenuItem>
+                <MenuItem Header="Решение" Click="Res5_Click" ></MenuItem>
+            </MenuItem>
         </Menu>
         <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="688" Margin="0,20,0,0" VerticalAlignment="Top" Width="753" Source="InfSyst/View.xaml" NavigationUIVisibility="Hidden" Panel.ZIndex="1"/>
     </Grid>

@@ -131,6 +131,46 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MPRO\Res1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Res2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Res3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Res4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Res5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Usl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Usl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Usl3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Usl4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MPRO\Usl5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MNK.xaml.cs">
@@ -147,6 +187,36 @@
     </Compile>
     <Compile Include="InfSyst\Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Res1.xaml.cs">
+      <DependentUpon>Res1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Res2.xaml.cs">
+      <DependentUpon>Res2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Res3.xaml.cs">
+      <DependentUpon>Res3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Res4.xaml.cs">
+      <DependentUpon>Res4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Res5.xaml.cs">
+      <DependentUpon>Res5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Usl1.xaml.cs">
+      <DependentUpon>Usl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Usl2.xaml.cs">
+      <DependentUpon>Usl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Usl3.xaml.cs">
+      <DependentUpon>Usl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Usl4.xaml.cs">
+      <DependentUpon>Usl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MPRO\Usl5.xaml.cs">
+      <DependentUpon>Usl5.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
